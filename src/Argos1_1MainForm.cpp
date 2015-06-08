@@ -71,6 +71,8 @@ Argos1_1MainForm::OnTerminating(void)
 void
 Argos1_1MainForm::OnActionPerformed(const Tizen::Ui::Control& source, int actionId)
 {
+	FILE *fp;
+	int num;
 	SceneManager* pSceneManager = SceneManager::GetInstance();
 	AppAssert(pSceneManager);
 
@@ -81,13 +83,18 @@ Argos1_1MainForm::OnActionPerformed(const Tizen::Ui::Control& source, int action
 		break;
 	case IDA_BUTTON_Optimization:
 			AppLog("Optimization Button is clicked!");
+			fp = fopen("/sys/module/argos/parameters/power_mode", "r+b");
+			fwrite(&num, sizeof(int), 1, fp);
 			break;
 	case IDA_BUTTON_PowerSaving:
 			AppLog("PowerSaving Button is clicked!");
+			fp = fopen("/sys/module/argos/parameters/power_mode", "r+b");
+			fwrite(&num, sizeof(int), 0, fp);
 			break;
 	default:
 		break;
 	}
+	fclose(fp);
 }
 
 void
