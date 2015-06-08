@@ -21,7 +21,6 @@ Argos1_1MainForm::Initialize(void)
 {
 	result r = Construct(IDL_FORM);
 	TryReturn(r == E_SUCCESS, false, "Failed to construct form");
-	AppLog("XXX - 0");
 	return true;
 }
 
@@ -34,7 +33,6 @@ Argos1_1MainForm::OnInitializing(void)
 
 	// Setup back event listener
 	SetFormBackEventListener(this);
-	AppLog("XXX - 1");
 	// Get a button via resource ID
 	Tizen::Ui::Controls::Button* pButtonOk = static_cast< Button* >(GetControl(IDC_BUTTON_OK));
 	Tizen::Ui::Controls::Button* pButtonOptimization = static_cast< Button* >(GetControl(IDC_BUTTON_Optimization));
@@ -54,7 +52,6 @@ Argos1_1MainForm::OnInitializing(void)
 		pButtonPowerSaving->SetActionId(IDA_BUTTON_PowerSaving);
 		pButtonPowerSaving->AddActionEventListener(*this);
 	}
-	AppLog("XXX - 2");
 
 	return r;
 }
@@ -71,9 +68,9 @@ Argos1_1MainForm::OnTerminating(void)
 void
 Argos1_1MainForm::OnActionPerformed(const Tizen::Ui::Control& source, int actionId)
 {
-	FILE *fp;
+	FILE *fp=NULL;
 	int num;
-	int written;
+	//int written;
 	SceneManager* pSceneManager = SceneManager::GetInstance();
 	AppAssert(pSceneManager);
 
@@ -83,32 +80,46 @@ Argos1_1MainForm::OnActionPerformed(const Tizen::Ui::Control& source, int action
 		AppLog("XXX - OK Button is clicked!");
 		break;
 	case IDA_BUTTON_Optimization:
-			AppLog("XXX - Optimization Button is clicked!");
-			fp = fopen("/sys/module/argos/parameters/power_mode", "r+");
-			if (fp < 0) {
-				AppLog("XXX - Can't open file");
-				return;
-			}
-
-			num = 1;
-			written = fwrite(&num, sizeof(int), sizeof(int), fp);
-			AppLog("XXX - writte: %d", written);
+		AppLog("XXX - Optimization Button is clicked!");
+		fp = fopen("/sys/devices/argos.9/power_mode", "r+");
+		if (fp < 0) {
+			AppLog("XXX - Can't open file");
 			break;
+		}
+		else if(fp==NULL){
+			AppLog("XXX - Can't open file");
+			break;
+		}
+		num = 1;
+		//written = fwrite(&num, sizeof(int), sizeof(int), fp);
+		fprintf(fp, "%d", num);
+		fclose(fp);
+		//sync();
+		//AppLog("XXX - write: %d", written);
+		break;
 	case IDA_BUTTON_PowerSaving:
-			AppLog("XXX - PowerSaving Button is clicked!");
-			fp = fopen("/sys/module/argos/parameters/power_mode", "r+");
-			if (fp < 0) {
-				AppLog("XXX - Can't open file");
-				return;
-			}
-			num = 0;
-			written = fwrite(&num, sizeof(int), sizeof(int), fp);
-			AppLog("XXX - writte: %d", written);
-			break;
+		AppLog("XXX - PowerSaving Button is clicked!");
+		fp = fopen("/sys/devices/argos.9/power_mode", "r+");
+
+		if (fp < 0) {
+			AppLog("XXX - Can't open file");
+			return;
+		}
+		else if(fp==NULL){
+					AppLog("XXX - Can't open file");
+					return;
+		}
+		num = 0;
+		//written = fwrite(&num, sizeof(int), sizeof(int), fp);
+		fprintf(fp, "%d", num);
+		fclose(fp);
+		//sync();
+		//AppLog("XXX - write: %d", written);
+		break;
 	default:
 		break;
 	}
-	fclose(fp);
+
 }
 
 void

@@ -30,6 +30,7 @@ private:
 	virtual void OnSceneDeactivated(const Tizen::Ui::Scenes::SceneId& currentSceneId,
 									const Tizen::Ui::Scenes::SceneId& nextSceneId);
 
+
 protected:
 	static const int IDA_BUTTON_OK = 101;
 	static const int IDA_BUTTON_Optimization = 102;

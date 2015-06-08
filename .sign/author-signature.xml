@@ -2,10 +2,6 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
-<Reference URI="info/manifest.xml">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>0ZyCq+3CoMeeeIsjZt6sVyu5fqnU7LmwGip09l/unZ8=</DigestValue>
-</Reference>
 <Reference URI="res/720x1280/Tulips.jpg">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>uTUvJWUmAhnbcvwfyJYROibIWGa2nFDTlwxNn1zOgwo=</DigestValue>
@@ -34,9 +30,13 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1d0oEZHqPn+QzNzGIHwj9ODby6x9ggFs9uOsav6jPNs=</DigestValue>
 </Reference>
+<Reference URI="info/manifest.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>7PqyKt4yCJmPJZ+83DKBKCjlqTQc7WIu5qIsl3wNGJ4=</DigestValue>
+</Reference>
 <Reference URI="bin/Argos1.1.exe">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eWr2tMEbwXIYd5vCCiaZtPWHZP7J7S4uq4rTIRTz3zI=</DigestValue>
+<DigestValue>cvsbCkhm5hMnuDAUDv/Y8S1L/p1drGdSHy3gmp0qGs8=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -47,9 +47,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Q4/1UUSD+RQQnRO7VPejI2WTaYCda9S4EI+PmRVFFPUe65UpjYkESbd355kYkbJXf6vgjyiK7vgy
-9upCsIC1sSpUJ53xSG6gHUcit8SMJ3RX3m3/1rYaOnOnVuOBmrpx2bIr9jOcSB3xBHPMM53ZmUO2
-tZzJSrx1cHQjU7ZS90Y=
+NKpGM67ONsy6vU01oWNAUPaQ5GTsKDd3fJsfghzhA/ez4ewAzeb40NOjV+N2ZLd2ChEwLwb2kE9B
+BjK+9YsaGgxqfTFYmVJ7PUYNWtlbNd/tuXgTwcJgX8heuLP/W9sZ8ZpXHTqdOeLS4bUvDVvOpr6q
+++3hAW86JyTvW3GsJXQ=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
