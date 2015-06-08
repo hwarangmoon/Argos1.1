@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin/Argos1.1.exe">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>smZQn145fPyNDfKKN810Ka3Q2NUA3is5kGgCShYH1x0=</DigestValue>
+<DigestValue>jrs420vkQPzzicoyhW186gVpAMVDBYf/jyhr4kTAVYg=</DigestValue>
 </Reference>
 <Reference URI="info/manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -47,9 +47,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-LehHViRjRp9US/3zw3YpbmBN2T4pKl1QMdt8qOnsvqhssGZwt2IyNRs3SJMpnGJfrjqoWbt7VBIm
-3xhGGbnT6MGzuXLv0mhav1Qfa3lkOSwXCJcaW9ZaVZfjS0x3Wlh2Y/y4jcrC9DM0a+qUy9reFS1o
-yFy9gcHLwM5AAeN5kqw=
+jpuIV9Jm8H72wTOOMW8ntrReYVjzbKCYE3U7FoefnTX2fvDsMFXzbYl5gXu7ozEiH0/H5jY/r0Pq
+/6p/+Dk2OF9iJMMrioAjlky992sSOIviMzhpBd6l/Gg3m4KmvOxmC46kxtkn6Fzo/qsWECzs9Jcl
+CWS1ib2nWE2txogoVxw=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
