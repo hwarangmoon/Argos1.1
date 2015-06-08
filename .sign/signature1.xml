@@ -2,6 +2,10 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+<Reference URI="info/manifest.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>0ZyCq+3CoMeeeIsjZt6sVyu5fqnU7LmwGip09l/unZ8=</DigestValue>
+</Reference>
 <Reference URI="res/720x1280/Tulips.jpg">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>uTUvJWUmAhnbcvwfyJYROibIWGa2nFDTlwxNn1zOgwo=</DigestValue>
@@ -30,17 +34,13 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1d0oEZHqPn+QzNzGIHwj9ODby6x9ggFs9uOsav6jPNs=</DigestValue>
 </Reference>
-<Reference URI="info/manifest.xml">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>hPfw2N7/GOHjDK9NtjXnOvIe8jlbA6Fm8my8lwx1NkI=</DigestValue>
-</Reference>
 <Reference URI="bin/Argos1.1.exe">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>rRS7Yk1YGF8PTX/fB+g8mxUq2tIew9DWQNVbWPoI1gg=</DigestValue>
+<DigestValue>eWr2tMEbwXIYd5vCCiaZtPWHZP7J7S4uq4rTIRTz3zI=</DigestValue>
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>WjcEaAlb7Uiw+fCr/nMlZDp9IphiUzWN3ou0yt9ezzk=</DigestValue>
+<DigestValue>gp8+A0AqG+pGPn0DtRLIeMpl0F1wHvN2z+FkCVSgyww=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -51,9 +51,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-KFayd0ZIametike8J42qvVBfYg4cbfQY8zbtYRSnMQdqHcIb4ehE3Cd9+Dp2z+tApw2Xhl0uH4Jz
-IkslEUbLby7iUa/YjP49evCoV/5e8ju0szbmW2M6WwAux8/dPqqwybZc5UqUDUkATGhy0CjhKSCV
-xkpj/6RnSSRCa033b2k=
+LV6xNpavvTv5DXOGSzZ3/psEUQNV/rVgTFCF+d611Isg0XUqWslPUul7AkzCl1d6KiBeuyZFbcD3
+q7UjqaflFCYWVpeAuGoptjk8mSYNOI3gfsgUwKC14VrA9BIK78D7q6E1VtwKSK7oVzCUjKIgGfGS
+pu6h1ysv34fU1IvpxcQ=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
