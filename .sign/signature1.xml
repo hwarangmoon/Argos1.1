@@ -2,14 +2,6 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
-<Reference URI="author-signature.xml">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>5FoHjPI7RTF+B6VO0z8k2WolrT5jKxJ45xqhQPkv2YA=</DigestValue>
-</Reference>
-<Reference URI="bin/Argos1.1.exe">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>smZQn145fPyNDfKKN810Ka3Q2NUA3is5kGgCShYH1x0=</DigestValue>
-</Reference>
 <Reference URI="info/manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>0ZyCq+3CoMeeeIsjZt6sVyu5fqnU7LmwGip09l/unZ8=</DigestValue>
@@ -42,6 +34,14 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1d0oEZHqPn+QzNzGIHwj9ODby6x9ggFs9uOsav6jPNs=</DigestValue>
 </Reference>
+<Reference URI="bin/Argos1.1.exe">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>eWr2tMEbwXIYd5vCCiaZtPWHZP7J7S4uq4rTIRTz3zI=</DigestValue>
+</Reference>
+<Reference URI="author-signature.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>gp8+A0AqG+pGPn0DtRLIeMpl0F1wHvN2z+FkCVSgyww=</DigestValue>
+</Reference>
 <Reference URI="#prop">
 <Transforms>
 <Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"></Transform>
@@ -51,9 +51,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-J7BZKaYGH2uYo35MddO1PEDZw+nwKI44Opue7nD37k34h+qmwO66Q92B7nthToezt5nG5YhYp/xx
-ApYv8iEFRZ+o0uoEt+UmqF23CB5tEJ5/IXntl0XudPwVhi9tP3BWozPx4mNTwF8L+NN6RYv4Qhvx
-GC50vQvKJwAeMT2BdRA=
+LV6xNpavvTv5DXOGSzZ3/psEUQNV/rVgTFCF+d611Isg0XUqWslPUul7AkzCl1d6KiBeuyZFbcD3
+q7UjqaflFCYWVpeAuGoptjk8mSYNOI3gfsgUwKC14VrA9BIK78D7q6E1VtwKSK7oVzCUjKIgGfGS
+pu6h1ysv34fU1IvpxcQ=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
