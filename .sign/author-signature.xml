@@ -18,10 +18,6 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>4sHmsfNLBh0dGz0jlglNYm7rWhrXxNWIhrHSffqH67c=</DigestValue>
 </Reference>
-<Reference URI="res/screen-size-normal/IDL_FORM.xml">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>0kiBFAHfuYyo034C8dsOR2qCPCymactHfs2Udp8QhTc=</DigestValue>
-</Reference>
 <Reference URI="res/screen-size-normal/workflow.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>13oDp3lzaNV0KUkkKB2CPSVruifqtmk5tfItLzSwCBs=</DigestValue>
@@ -36,7 +32,11 @@
 </Reference>
 <Reference URI="bin/Argos1.1.exe">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>cvsbCkhm5hMnuDAUDv/Y8S1L/p1drGdSHy3gmp0qGs8=</DigestValue>
+<DigestValue>ixv2H/GQSsi2sH0hIGuY1e4HqbF9lvefHKRm22Tqf10=</DigestValue>
+</Reference>
+<Reference URI="res/screen-size-normal/IDL_FORM.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>eHszyCA78zfI60g9bCjD9ma6GWIbGL1y9E1s5pWluxg=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -47,9 +47,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-NKpGM67ONsy6vU01oWNAUPaQ5GTsKDd3fJsfghzhA/ez4ewAzeb40NOjV+N2ZLd2ChEwLwb2kE9B
-BjK+9YsaGgxqfTFYmVJ7PUYNWtlbNd/tuXgTwcJgX8heuLP/W9sZ8ZpXHTqdOeLS4bUvDVvOpr6q
-++3hAW86JyTvW3GsJXQ=
+W7d5sUp++I7tStSJJlo8D3TchBeHbIZeEz1mM+9hf63eFvUDB86LYvdrI4WaXygRTj7fGLJ7FcZk
+yP31KYPRWWBKvkCtBZug8v/83rYeH0r5bJWyTv9wxgRdKU2GxPQvHG30Q/CWSR9+qP9hJNtcePMk
+HM6covE7dxBHElavVNY=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

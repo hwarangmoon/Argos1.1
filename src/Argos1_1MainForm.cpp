@@ -34,18 +34,18 @@ Argos1_1MainForm::OnInitializing(void)
 	// Setup back event listener
 	SetFormBackEventListener(this);
 	// Get a button via resource ID
-	Tizen::Ui::Controls::Button* pButtonOk = static_cast< Button* >(GetControl(IDC_BUTTON_OK));
-	Tizen::Ui::Controls::Button* pButtonOptimization = static_cast< Button* >(GetControl(IDC_BUTTON_Optimization));
+	//Tizen::Ui::Controls::Button* pButtonOk = static_cast< Button* >(GetControl(IDC_BUTTON_OK));
+	Tizen::Ui::Controls::Button* pButtonPerformance = static_cast< Button* >(GetControl(IDC_BUTTON_Performance));
 	Tizen::Ui::Controls::Button* pButtonPowerSaving = static_cast< Button* >(GetControl(IDC_BUTTON_PowerSaving));
-	if (pButtonOk != null)
+	//if (pButtonOk != null)
+	//{
+	//	pButtonOk->SetActionId(IDA_BUTTON_OK);
+	//	pButtonOk->AddActionEventListener(*this);
+	//}
+	if (pButtonPerformance != null)
 	{
-		pButtonOk->SetActionId(IDA_BUTTON_OK);
-		pButtonOk->AddActionEventListener(*this);
-	}
-	if (pButtonOptimization != null)
-	{
-		pButtonOptimization->SetActionId(IDA_BUTTON_Optimization);
-		pButtonOptimization->AddActionEventListener(*this);
+		pButtonPerformance->SetActionId(IDA_BUTTON_Performance);
+		pButtonPerformance->AddActionEventListener(*this);
 	}
 	if (pButtonPowerSaving != null)
 	{
@@ -76,10 +76,10 @@ Argos1_1MainForm::OnActionPerformed(const Tizen::Ui::Control& source, int action
 
 	switch(actionId)
 	{
-	case IDA_BUTTON_OK:
-		AppLog("XXX - OK Button is clicked!");
-		break;
-	case IDA_BUTTON_Optimization:
+	//case IDA_BUTTON_OK:
+	//	AppLog("XXX - OK Button is clicked!");
+	//	break;
+	case IDA_BUTTON_Performance:
 		AppLog("XXX - Optimization Button is clicked!");
 		fp = fopen("/sys/devices/argos.9/power_mode", "r+");
 		if (fp < 0) {

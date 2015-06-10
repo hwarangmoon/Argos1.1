@@ -32,8 +32,8 @@ private:
 
 
 protected:
-	static const int IDA_BUTTON_OK = 101;
-	static const int IDA_BUTTON_Optimization = 102;
+	//static const int IDA_BUTTON_OK = 101;
+	static const int IDA_BUTTON_Performance = 102;
 	static const int IDA_BUTTON_PowerSaving = 103;
 };
 
